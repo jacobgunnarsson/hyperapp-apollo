@@ -1,0 +1,49 @@
+{
+  "name": "hyperapp2000",
+  "version": "1.0.0",
+  "description": "Hyperapp boilerplate with webpack, typescript and sass",
+  "scripts": {
+    "wipe":
+      "rm -rf .git && git init && git add . && git commit -m 'Initial commit✨'",
+    "start": "webpack-dev-server",
+    "build": "webpack --env production",
+    "test": "jest --coverage --no-cache",
+    "prettify": "prettier --write \"{src,test}/**/*.{js,ts,tsx}\""
+  },
+  "pre-commit": ["prettify"],
+  "keywords": [],
+  "author": "Daniel Hägglund <daniel.hagglund+github@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/judas-christ/hyperapp2000.git"
+  },
+  "dependencies": {
+    "hyperapp": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.2",
+    "autoprefixer": "^7.2.5",
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.0",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "imports": "^1.0.0",
+    "jest": "^22.1.4",
+    "node-libs-browser": "^2.0.0",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.10.2",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "^22.0.3",
+    "typescript": "^2.7.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.4.0",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/judas-christ/hyperapp2000/issues"
+  },
+  "homepage": "https://github.com/judas-christ/hyperapp2000#readme"
+}
