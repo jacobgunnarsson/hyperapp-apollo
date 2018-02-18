@@ -1,26 +1,33 @@
 {
-  "name": "hyperapp2000",
+  "name": "hyperapp-apollo",
   "version": "1.0.0",
   "description": "Hyperapp boilerplate with webpack, typescript and sass",
   "scripts": {
-    "wipe":
-      "rm -rf .git && git init && git add . && git commit -m 'Initial commit✨'",
+    "wipe": "rm -rf .git && git init && git add . && git commit -m 'Initial commit✨'",
     "start": "webpack-dev-server",
-    "build": "webpack --env production",
+    "build": "NODE_ENV=production webpack --env production",
     "test": "jest --coverage --no-cache",
     "prettify": "prettier --write \"{src,test}/**/*.{js,ts,tsx}\""
   },
-  "pre-commit": ["prettify"],
   "keywords": [],
-  "author": "Daniel Hägglund <daniel.hagglund+github@gmail.com>",
+  "author": "Jacob Gunnarsson <jacob.gunnarsson@hyperisland.se>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/judas-christ/hyperapp2000.git"
+    "url": "git+https://github.com/jacobgunnarsson/hyperapp-apollo.git"
   },
   "dependencies": {
-    "hyperapp": "^1.1.1"
+    "@hyperapp/logger": "^0.4.1",
+    "@hyperapp/router": "^0.4.1",
+    "apollo-cache-inmemory": "^1.1.9",
+    "apollo-client": "^2.2.5",
+    "apollo-link-http": "^1.3.3",
+    "graphql": "^0.13.1",
+    "graphql-tag": "^2.7.3",
+    "hyperapp": "^1.1.1",
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.20",
     "@types/jest": "^22.1.2",
     "autoprefixer": "^7.2.5",
     "awesome-typescript-loader": "^3.4.1",
@@ -43,7 +50,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "bugs": {
-    "url": "https://github.com/judas-christ/hyperapp2000/issues"
+    "url": "https://github.com/jacobgunnarsson/hyperapp-apollo.git/issues"
   },
-  "homepage": "https://github.com/judas-christ/hyperapp2000#readme"
+  "homepage": "https://github.com/jacobgunnarsson/hyperapp-apollo.git#readme"
 }

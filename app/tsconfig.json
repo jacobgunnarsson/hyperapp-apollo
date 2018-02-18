@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "public",
     "target": "es5",
     "module": "commonjs",
     "noImplicitAny": false,
     "removeComments": true,
     "sourceMap": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "lib": ["es2015", "es2015.iterable", "es2017", "dom"]
   },
-  "include": ["./app/src/**/*.tsx", "./app/src/**/*.ts", "./server/src/**/*.ts"]
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }

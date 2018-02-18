@@ -1,13 +1,13 @@
-# Hyperapp2000
+# Hyperapp/apollo-client/@hyperapp test
 
-Hyperapp boilerplate with Webpack, Typescript and Sass. Prettified by Prettier. Basically a clone of [HyperApp One](https://github.com/selfup/hyperapp-one) with different settings.
+Hyperapp boilerplate with Webpack, Typescript and Sass. Prettified by Prettier. Built on [hyperapp-apollo](https://github.com/judas-christ/hyperapp-apollo.git).
 
 ## Setup
 
 Clone this repo:
 
 ```bash
-git clone --depth 1 https://github.com/judas-christ/hyperapp2000.git
+git clone --depth 1 https://github.com/jacobgunnarsson/hyperapp-apollo.git
 ```
 
 Wipe the old and create a new repo:
@@ -16,11 +16,13 @@ Wipe the old and create a new repo:
 npm run wipe
 ```
 
-Install packages and run the app:
+Install packages and run the server and app:
 
 ```bash
-npm install
-npm start
+cd app && npm install && npm start
+cd server && npm install && npm start
 ```
 
-Build something.
+Check stuff out at
+http://localhost:8080/
+http://localhost:8081/graphiql

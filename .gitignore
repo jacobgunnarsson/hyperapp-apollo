@@ -1,7 +1,8 @@
 # Project specific
 .vscode/
-public/
 coverage/
+app/public/
+server/dist
 
 # Logs
 logs
