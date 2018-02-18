@@ -1,6 +1,6 @@
 # Hyperapp/apollo-client/@hyperapp test
 
-Hyperapp boilerplate with Webpack, Typescript and Sass. Prettified by Prettier. Built on [hyperapp-apollo](https://github.com/judas-christ/hyperapp-apollo.git).
+Hyperapp boilerplate with Webpack, Typescript and Sass. Prettified by Prettier. Built on [Hyperapp2000](https://github.com/judas-christ/hyperapp2000.git) by the eminent [judas-christ](https://github.com/judas-christ).
 
 ## Setup
 
