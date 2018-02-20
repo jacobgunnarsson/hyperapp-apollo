@@ -6,5 +6,5 @@
     "removeComments": true,
     "sourceMap": true
   },
-  "include": ["./server/src/**/*.ts"]
+  "include": ["./src/**/*.ts"]
 }
