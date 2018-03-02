@@ -1,4 +1,4 @@
-export default [
+export const mockCommentsData = [
   {
     "postId": 1,
     "id": 1,

@@ -9,7 +9,7 @@ export const Users = (state, actions) => ({ match }) => {
   } = state.users
 
   return (
-    <div oncreate={actions.users.fetch}>
+    <div oncreate={actions.users.query}>
       {loading && <h2>Loading</h2>}
 
       {!loading && data.users && <h2>Users</h2>}

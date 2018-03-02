@@ -1,4 +1,4 @@
-export default [
+export const mockUsersData = [
   {
     "id": 1,
     "name": "Leanne Graham",

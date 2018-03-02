@@ -4,20 +4,12 @@ import { location } from '@hyperapp/router'
 
 import { actions } from './actions'
 import { state } from './state'
+import { connectHyperApollo } from './graphql/queries'
 import { Index } from './components/index'
 
 import '../styles/app.scss'
 
-import {
-  connectHyperApollo,
-  hyperApolloState,
-  connectHyperApolloWatchQuery,
-} from './graphql/queries'
-
-connectHyperApolloWatchQuery(state, actions, hyperApolloState)
-
-console.log(state)
-console.log(actions)
+connectHyperApollo(state, actions)
 
 const appWithLogger = logger()(app)(state, actions, Index, document.body)
 

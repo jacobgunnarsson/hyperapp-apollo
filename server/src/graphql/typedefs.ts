@@ -22,6 +22,11 @@ const typeDefs = `
     users: [User]
     user(id: ID!): User
     comment(id: ID!): Comment
+    comments: [Comment]
+  }
+
+  type Mutation {
+    deleteComment(id: ID!): Comment
   }
 `
 
